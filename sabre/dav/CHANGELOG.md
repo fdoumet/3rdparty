@@ -1,6 +1,35 @@
 ChangeLog
 =========
 
+3.3.0-alpha1 (2018-06-04)
+------------------
+
+* SimpleCollection can now take arrays and strings as argument for super
+  simple tree creation.
+* Added `Sabre\DAV\Server::start()`. This replaces `::exec()`. `::exec()`
+  is now deprecated, but we're keeping it around for a year or two to make
+  the transition easier.
+* `getChildren()` function in any collection may now return an iterator
+  instead of an array. This can result in memory savings for large
+  collections.
+* `Tree::getChildren()` now returns an Iterator instead of an array.
+* Added `$overrideName` to all `Sabre\DAV\FS` and `Sabre\DAV\FSExt` classes,
+  so users can specify under what name these nodes show up in the tree.
+* #889 Added support for filtering vCard properties in the addressbook-query
+  REPORT (@DeepDiver1975).
+* #918: Add a lot of sqlite indexes. This should speed up sqlite-based
+  installations quite a bit.
+* #982: Make sure that files that are siblings of directories, are reported
+  as files (@nickvergessen)
+* #1058: Don't open file resource on HEAD request (@icewind1991)
+* #1031: Fix copyNode for case of file named 0 (@phil-davis)
+
+3.2.3 (????-??-??)
+------------------
+
+* #982: Make sure that files that are siblings of directories, are reported
+  as files (@nickvergessen)
+
 3.2.2 (2017-02-14)
 ------------------
 
