@@ -660,7 +660,6 @@ class CorePlugin extends ServerPlugin {
         // Sending back false will interrupt the event chain and tell the server
         // we've handled this method.
         return false;
-
     }
 
     /**
