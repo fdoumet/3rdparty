@@ -8,8 +8,9 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
 {
     public static $files = array (
         '383eaff206634a77a1be54e64e6459c7' => __DIR__ . '/..' . '/sabre/uri/lib/functions.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '2b9d0f43f9552984cfa82fee95491826' => __DIR__ . '/..' . '/sabre/event/lib/coroutine.php',
         'd81bab31d3feb45bfe2f283ea3c8fdf7' => __DIR__ . '/..' . '/sabre/event/lib/Loop/functions.php',
         'a1cce3d26cc15c00fcd0b3354bd72c88' => __DIR__ . '/..' . '/sabre/event/lib/Promise/functions.php',
@@ -20,10 +21,9 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'ebdb698ed4152ae445614b69b5e4bb6a' => __DIR__ . '/..' . '/sabre/http/lib/functions.php',
         'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
         'fe1bcd0336136e435eaf197895daf81a' => __DIR__ . '/..' . '/nikic/php-parser/lib/bootstrap.php',
-        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
-        '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -66,16 +66,13 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
             'Sabre\\CardDAV\\' => 14,
             'Sabre\\CalDAV\\' => 13,
         ),
-        'R' => 
-        array (
-            'React\\Promise\\' => 14,
-        ),
         'P' => 
         array (
             'Punic\\' => 6,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'Patchwork\\' => 10,
         ),
         'O' => 
@@ -106,8 +103,6 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         ),
         'G' => 
         array (
-            'GuzzleHttp\\Stream\\' => 18,
-            'GuzzleHttp\\Ring\\' => 16,
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
@@ -118,7 +113,10 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         ),
         'D' => 
         array (
+            'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
         ),
         'A' => 
@@ -224,10 +222,6 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         array (
             0 => __DIR__ . '/..' . '/sabre/dav/lib/CalDAV',
         ),
-        'React\\Promise\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/promise/src',
-        ),
         'Punic\\' => 
         array (
             0 => __DIR__ . '/..' . '/punic/punic/code',
@@ -244,10 +238,14 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'Patchwork\\' => 
         array (
-            0 => __DIR__ . '/..' . '/patchwork/jsqueeze/src',
-            1 => __DIR__ . '/..' . '/patchwork/utf8/src/Patchwork',
+            0 => __DIR__ . '/..' . '/patchwork/utf8/src/Patchwork',
+            1 => __DIR__ . '/..' . '/patchwork/jsqueeze/src',
         ),
         'OpenStack\\' => 
         array (
@@ -293,14 +291,6 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         array (
             0 => __DIR__ . '/..' . '/lukasreschke/id3parser/src',
         ),
-        'GuzzleHttp\\Stream\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
-        ),
-        'GuzzleHttp\\Ring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
-        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -317,9 +307,21 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
         ),
+        'Doctrine\\Common\\Lexer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
+        ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
         'Doctrine\\Common\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
         'Doctrine\\Common\\' => 
         array (
@@ -332,6 +334,13 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
     );
 
     public static $prefixesPsr0 = array (
+        'R' => 
+        array (
+            'Rize\\UriTemplate' => 
+            array (
+                0 => __DIR__ . '/..' . '/rize/uri-template/src',
+            ),
+        ),
         'P' => 
         array (
             'Pimple' => 
@@ -349,21 +358,9 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
             array (
                 0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
             ),
-            'Doctrine\\Common\\Lexer\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
-            ),
-            'Doctrine\\Common\\Inflector\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
-            ),
             'Doctrine\\Common\\Collections\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
-            ),
-            'Doctrine\\Common\\Annotations\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
             ),
         ),
         'C' => 
@@ -539,6 +536,8 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'Aws\\Crypto\\MetadataStrategyInterface' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Crypto/MetadataStrategyInterface.php',
         'Aws\\DAX\\DAXClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/DAX/DAXClient.php',
         'Aws\\DAX\\Exception\\DAXException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/DAX/Exception/DAXException.php',
+        'Aws\\DLM\\DLMClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/DLM/DLMClient.php',
+        'Aws\\DLM\\Exception\\DLMException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/DLM/Exception/DLMException.php',
         'Aws\\DataPipeline\\DataPipelineClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/DataPipeline/DataPipelineClient.php',
         'Aws\\DataPipeline\\Exception\\DataPipelineException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/DataPipeline/Exception/DataPipelineException.php',
         'Aws\\DatabaseMigrationService\\DatabaseMigrationServiceClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/DatabaseMigrationService/DatabaseMigrationServiceClient.php',
@@ -836,6 +835,8 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'Aws\\WrappedHttpHandler' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/WrappedHttpHandler.php',
         'Aws\\XRay\\Exception\\XRayException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/XRay/Exception/XRayException.php',
         'Aws\\XRay\\XRayClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/XRay/XRayClient.php',
+        'Aws\\signer\\Exception\\signerException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/signer/Exception/signerException.php',
+        'Aws\\signer\\signerClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/signer/signerClient.php',
         'Console_Getopt' => __DIR__ . '/..' . '/pear/console_getopt/Console/Getopt.php',
         'Doctrine\\Common\\Annotations\\Annotation' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation.php',
         'Doctrine\\Common\\Annotations\\AnnotationException' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php',
@@ -857,6 +858,7 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'Doctrine\\Common\\Annotations\\SimpleAnnotationReader' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/SimpleAnnotationReader.php',
         'Doctrine\\Common\\Annotations\\TokenParser' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/TokenParser.php',
         'Doctrine\\Common\\Cache\\ApcCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcCache.php',
+        'Doctrine\\Common\\Cache\\ApcuCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcuCache.php',
         'Doctrine\\Common\\Cache\\ArrayCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ArrayCache.php',
         'Doctrine\\Common\\Cache\\Cache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php',
         'Doctrine\\Common\\Cache\\CacheProvider' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php',
@@ -870,6 +872,7 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'Doctrine\\Common\\Cache\\MemcachedCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/MemcachedCache.php',
         'Doctrine\\Common\\Cache\\MongoDBCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/MongoDBCache.php',
         'Doctrine\\Common\\Cache\\MultiGetCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/MultiGetCache.php',
+        'Doctrine\\Common\\Cache\\MultiPutCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/MultiPutCache.php',
         'Doctrine\\Common\\Cache\\PhpFileCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/PhpFileCache.php',
         'Doctrine\\Common\\Cache\\PredisCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/PredisCache.php',
         'Doctrine\\Common\\Cache\\RedisCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/RedisCache.php',
@@ -1295,6 +1298,7 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'GuzzleHttp\\Psr7\\PumpStream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/PumpStream.php',
         'GuzzleHttp\\Psr7\\Request' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Request.php',
         'GuzzleHttp\\Psr7\\Response' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Response.php',
+        'GuzzleHttp\\Psr7\\Rfc7230' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Rfc7230.php',
         'GuzzleHttp\\Psr7\\ServerRequest' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/ServerRequest.php',
         'GuzzleHttp\\Psr7\\Stream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Stream.php',
         'GuzzleHttp\\Psr7\\StreamDecoratorTrait' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/StreamDecoratorTrait.php',
@@ -1306,46 +1310,6 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'GuzzleHttp\\RedirectMiddleware' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/RedirectMiddleware.php',
         'GuzzleHttp\\RequestOptions' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/RequestOptions.php',
         'GuzzleHttp\\RetryMiddleware' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/RetryMiddleware.php',
-        'GuzzleHttp\\Ring\\Client\\ClientUtils' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Client/ClientUtils.php',
-        'GuzzleHttp\\Ring\\Client\\CurlFactory' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Client/CurlFactory.php',
-        'GuzzleHttp\\Ring\\Client\\CurlHandler' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Client/CurlHandler.php',
-        'GuzzleHttp\\Ring\\Client\\CurlMultiHandler' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Client/CurlMultiHandler.php',
-        'GuzzleHttp\\Ring\\Client\\Middleware' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Client/Middleware.php',
-        'GuzzleHttp\\Ring\\Client\\MockHandler' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Client/MockHandler.php',
-        'GuzzleHttp\\Ring\\Client\\StreamHandler' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Client/StreamHandler.php',
-        'GuzzleHttp\\Ring\\Core' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Core.php',
-        'GuzzleHttp\\Ring\\Exception\\CancelledException' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Exception/CancelledException.php',
-        'GuzzleHttp\\Ring\\Exception\\CancelledFutureAccessException' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Exception/CancelledFutureAccessException.php',
-        'GuzzleHttp\\Ring\\Exception\\ConnectException' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Exception/ConnectException.php',
-        'GuzzleHttp\\Ring\\Exception\\RingException' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Exception/RingException.php',
-        'GuzzleHttp\\Ring\\Future\\BaseFutureTrait' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/BaseFutureTrait.php',
-        'GuzzleHttp\\Ring\\Future\\CompletedFutureArray' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/CompletedFutureArray.php',
-        'GuzzleHttp\\Ring\\Future\\CompletedFutureValue' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php',
-        'GuzzleHttp\\Ring\\Future\\FutureArray' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/FutureArray.php',
-        'GuzzleHttp\\Ring\\Future\\FutureArrayInterface' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/FutureArrayInterface.php',
-        'GuzzleHttp\\Ring\\Future\\FutureInterface' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/FutureInterface.php',
-        'GuzzleHttp\\Ring\\Future\\FutureValue' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/FutureValue.php',
-        'GuzzleHttp\\Ring\\Future\\MagicFutureTrait' => __DIR__ . '/..' . '/guzzlehttp/ringphp/src/Future/MagicFutureTrait.php',
-        'GuzzleHttp\\Stream\\AppendStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/AppendStream.php',
-        'GuzzleHttp\\Stream\\AsyncReadStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/AsyncReadStream.php',
-        'GuzzleHttp\\Stream\\BufferStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/BufferStream.php',
-        'GuzzleHttp\\Stream\\CachingStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/CachingStream.php',
-        'GuzzleHttp\\Stream\\DroppingStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/DroppingStream.php',
-        'GuzzleHttp\\Stream\\Exception\\CannotAttachException' => __DIR__ . '/..' . '/guzzlehttp/streams/src/Exception/CannotAttachException.php',
-        'GuzzleHttp\\Stream\\Exception\\SeekException' => __DIR__ . '/..' . '/guzzlehttp/streams/src/Exception/SeekException.php',
-        'GuzzleHttp\\Stream\\FnStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/FnStream.php',
-        'GuzzleHttp\\Stream\\GuzzleStreamWrapper' => __DIR__ . '/..' . '/guzzlehttp/streams/src/GuzzleStreamWrapper.php',
-        'GuzzleHttp\\Stream\\InflateStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/InflateStream.php',
-        'GuzzleHttp\\Stream\\LazyOpenStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/LazyOpenStream.php',
-        'GuzzleHttp\\Stream\\LimitStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/LimitStream.php',
-        'GuzzleHttp\\Stream\\MetadataStreamInterface' => __DIR__ . '/..' . '/guzzlehttp/streams/src/MetadataStreamInterface.php',
-        'GuzzleHttp\\Stream\\NoSeekStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/NoSeekStream.php',
-        'GuzzleHttp\\Stream\\NullStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/NullStream.php',
-        'GuzzleHttp\\Stream\\PumpStream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/PumpStream.php',
-        'GuzzleHttp\\Stream\\Stream' => __DIR__ . '/..' . '/guzzlehttp/streams/src/Stream.php',
-        'GuzzleHttp\\Stream\\StreamDecoratorTrait' => __DIR__ . '/..' . '/guzzlehttp/streams/src/StreamDecoratorTrait.php',
-        'GuzzleHttp\\Stream\\StreamInterface' => __DIR__ . '/..' . '/guzzlehttp/streams/src/StreamInterface.php',
-        'GuzzleHttp\\Stream\\Utils' => __DIR__ . '/..' . '/guzzlehttp/streams/src/Utils.php',
         'GuzzleHttp\\TransferStats' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/TransferStats.php',
         'GuzzleHttp\\UriTemplate' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/UriTemplate.php',
         'ID3Parser\\ID3Parser' => __DIR__ . '/..' . '/lukasreschke/id3parser/src/ID3Parser.php',
@@ -1367,6 +1331,21 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'Icewind\\Streams\\PathWrapper' => __DIR__ . '/..' . '/icewind/streams/src/PathWrapper.php',
         'Icewind\\Streams\\RetryWrapper' => __DIR__ . '/..' . '/icewind/streams/src/RetryWrapper.php',
         'Icewind\\Streams\\SeekableWrapper' => __DIR__ . '/..' . '/icewind/streams/src/SeekableWrapper.php',
+        'Icewind\\Streams\\Tests\\CallbackWrapperTest' => __DIR__ . '/..' . '/icewind/streams/tests/CallbackWrapperTest.php',
+        'Icewind\\Streams\\Tests\\CountWrapperTest' => __DIR__ . '/..' . '/icewind/streams/tests/CountWrapperTest.php',
+        'Icewind\\Streams\\Tests\\DirectoryFilter' => __DIR__ . '/..' . '/icewind/streams/tests/DirectoryFilter.php',
+        'Icewind\\Streams\\Tests\\DirectoryWrapper' => __DIR__ . '/..' . '/icewind/streams/tests/DirectoryWrapper.php',
+        'Icewind\\Streams\\Tests\\DirectoryWrapperDummy' => __DIR__ . '/..' . '/icewind/streams/tests/DirectoryWrapper.php',
+        'Icewind\\Streams\\Tests\\DirectoryWrapperNull' => __DIR__ . '/..' . '/icewind/streams/tests/DirectoryWrapper.php',
+        'Icewind\\Streams\\Tests\\FailWrapper' => __DIR__ . '/..' . '/icewind/streams/tests/RetryWrapper.php',
+        'Icewind\\Streams\\Tests\\IteratorDirectory' => __DIR__ . '/..' . '/icewind/streams/tests/IteratorDirectory.php',
+        'Icewind\\Streams\\Tests\\NullWrapperTest' => __DIR__ . '/..' . '/icewind/streams/tests/NullWrapperTest.php',
+        'Icewind\\Streams\\Tests\\PartialWrapper' => __DIR__ . '/..' . '/icewind/streams/tests/RetryWrapper.php',
+        'Icewind\\Streams\\Tests\\PathWrapper' => __DIR__ . '/..' . '/icewind/streams/tests/PathWrapper.php',
+        'Icewind\\Streams\\Tests\\RetryWrapperTest' => __DIR__ . '/..' . '/icewind/streams/tests/RetryWrapper.php',
+        'Icewind\\Streams\\Tests\\SeekableWrapper' => __DIR__ . '/..' . '/icewind/streams/tests/SeekableWrapper.php',
+        'Icewind\\Streams\\Tests\\UrlCallBack' => __DIR__ . '/..' . '/icewind/streams/tests/UrlCallBack.php',
+        'Icewind\\Streams\\Tests\\WrapperTest' => __DIR__ . '/..' . '/icewind/streams/tests/WrapperTest.php',
         'Icewind\\Streams\\Url' => __DIR__ . '/..' . '/icewind/streams/src/Url.php',
         'Icewind\\Streams\\UrlCallback' => __DIR__ . '/..' . '/icewind/streams/src/UrlCallBack.php',
         'Icewind\\Streams\\Wrapper' => __DIR__ . '/..' . '/icewind/streams/src/Wrapper.php',
@@ -1453,6 +1432,7 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'League\\Flysystem\\AdapterInterface' => __DIR__ . '/..' . '/league/flysystem/src/AdapterInterface.php',
         'League\\Flysystem\\Adapter\\AbstractAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractAdapter.php',
         'League\\Flysystem\\Adapter\\AbstractFtpAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractFtpAdapter.php',
+        'League\\Flysystem\\Adapter\\CanOverwriteFiles' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/CanOverwriteFiles.php',
         'League\\Flysystem\\Adapter\\Ftp' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Ftp.php',
         'League\\Flysystem\\Adapter\\Ftpd' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Ftpd.php',
         'League\\Flysystem\\Adapter\\Local' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Local.php',
@@ -1752,6 +1732,7 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'PEAR_Error' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
         'PEAR_ErrorStack' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR/ErrorStack.php',
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
+        'PEAR_ExceptionTest' => __DIR__ . '/..' . '/pear/pear_exception/tests/PEAR/ExceptionTest.php',
         'Patchwork\\JSqueeze' => __DIR__ . '/..' . '/patchwork/jsqueeze/src/JSqueeze.php',
         'Patchwork\\PHP\\Shim\\Iconv' => __DIR__ . '/..' . '/patchwork/utf8/src/Patchwork/PHP/Shim/Iconv.php',
         'Patchwork\\PHP\\Shim\\Intl' => __DIR__ . '/..' . '/patchwork/utf8/src/Patchwork/PHP/Shim/Intl.php',
@@ -1772,6 +1753,19 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'Pimple\\Psr11\\ServiceLocator' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Psr11/ServiceLocator.php',
         'Pimple\\ServiceIterator' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/ServiceIterator.php',
         'Pimple\\ServiceProviderInterface' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/ServiceProviderInterface.php',
+        'Pimple\\Tests\\Fixtures\\Invokable' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Fixtures/Invokable.php',
+        'Pimple\\Tests\\Fixtures\\NonInvokable' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Fixtures/NonInvokable.php',
+        'Pimple\\Tests\\Fixtures\\PimpleServiceProvider' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Fixtures/PimpleServiceProvider.php',
+        'Pimple\\Tests\\Fixtures\\Service' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Fixtures/Service.php',
+        'Pimple\\Tests\\PimpleServiceProviderInterfaceTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/PimpleServiceProviderInterfaceTest.php',
+        'Pimple\\Tests\\PimpleTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/PimpleTest.php',
+        'Pimple\\Tests\\Psr11\\ContainerTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Psr11/ContainerTest.php',
+        'Pimple\\Tests\\Psr11\\ServiceLocatorTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Psr11/ServiceLocatorTest.php',
+        'Pimple\\Tests\\ServiceIteratorTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/ServiceIteratorTest.php',
+        'Psr\\Cache\\CacheException' => __DIR__ . '/..' . '/psr/cache/src/CacheException.php',
+        'Psr\\Cache\\CacheItemInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemInterface.php',
+        'Psr\\Cache\\CacheItemPoolInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemPoolInterface.php',
+        'Psr\\Cache\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/cache/src/InvalidArgumentException.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
@@ -1813,16 +1807,16 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'Punic\\Plural' => __DIR__ . '/..' . '/punic/punic/code/Plural.php',
         'Punic\\Territory' => __DIR__ . '/..' . '/punic/punic/code/Territory.php',
         'Punic\\Unit' => __DIR__ . '/..' . '/punic/punic/code/Unit.php',
-        'React\\Promise\\CancellablePromiseInterface' => __DIR__ . '/..' . '/react/promise/src/CancellablePromiseInterface.php',
-        'React\\Promise\\Deferred' => __DIR__ . '/..' . '/react/promise/src/Deferred.php',
-        'React\\Promise\\ExtendedPromiseInterface' => __DIR__ . '/..' . '/react/promise/src/ExtendedPromiseInterface.php',
-        'React\\Promise\\FulfilledPromise' => __DIR__ . '/..' . '/react/promise/src/FulfilledPromise.php',
-        'React\\Promise\\LazyPromise' => __DIR__ . '/..' . '/react/promise/src/LazyPromise.php',
-        'React\\Promise\\Promise' => __DIR__ . '/..' . '/react/promise/src/Promise.php',
-        'React\\Promise\\PromiseInterface' => __DIR__ . '/..' . '/react/promise/src/PromiseInterface.php',
-        'React\\Promise\\PromisorInterface' => __DIR__ . '/..' . '/react/promise/src/PromisorInterface.php',
-        'React\\Promise\\RejectedPromise' => __DIR__ . '/..' . '/react/promise/src/RejectedPromise.php',
-        'React\\Promise\\UnhandledRejectionException' => __DIR__ . '/..' . '/react/promise/src/UnhandledRejectionException.php',
+        'Rize\\UriTemplate' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate.php',
+        'Rize\\UriTemplate\\Node\\Abstraction' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Node/Abstraction.php',
+        'Rize\\UriTemplate\\Node\\Expression' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Node/Expression.php',
+        'Rize\\UriTemplate\\Node\\Literal' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Node/Literal.php',
+        'Rize\\UriTemplate\\Node\\Variable' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Node/Variable.php',
+        'Rize\\UriTemplate\\Operator\\Abstraction' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Operator/Abstraction.php',
+        'Rize\\UriTemplate\\Operator\\Named' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Operator/Named.php',
+        'Rize\\UriTemplate\\Operator\\UnNamed' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Operator/UnNamed.php',
+        'Rize\\UriTemplate\\Parser' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/Parser.php',
+        'Rize\\UriTemplate\\UriTemplate' => __DIR__ . '/..' . '/rize/uri-template/src/Rize/UriTemplate/UriTemplate.php',
         'Sabre\\CalDAV\\Backend\\AbstractBackend' => __DIR__ . '/..' . '/sabre/dav/lib/CalDAV/Backend/AbstractBackend.php',
         'Sabre\\CalDAV\\Backend\\BackendInterface' => __DIR__ . '/..' . '/sabre/dav/lib/CalDAV/Backend/BackendInterface.php',
         'Sabre\\CalDAV\\Backend\\NotificationSupport' => __DIR__ . '/..' . '/sabre/dav/lib/CalDAV/Backend/NotificationSupport.php',
@@ -2176,6 +2170,10 @@ class ComposerStaticInit2f23f73bc0cc116b4b1eee1521aa8652
         'SearchDAV\\Query\\Order' => __DIR__ . '/..' . '/icewind/searchdav/src/Query/Order.php',
         'SearchDAV\\Query\\Query' => __DIR__ . '/..' . '/icewind/searchdav/src/Query/Query.php',
         'SearchDAV\\Query\\Scope' => __DIR__ . '/..' . '/icewind/searchdav/src/Query/Scope.php',
+        'SearchDAV\\Test\\DummyBackend' => __DIR__ . '/..' . '/icewind/searchdav/tests/DummyBackend.php',
+        'SearchDAV\\Test\\PathHelperTest' => __DIR__ . '/..' . '/icewind/searchdav/tests/PathHelperTest.php',
+        'SearchDAV\\Test\\QueryParserTest' => __DIR__ . '/..' . '/icewind/searchdav/tests/QueryParserTest.php',
+        'SearchDAV\\Test\\SearchPluginTest' => __DIR__ . '/..' . '/icewind/searchdav/tests/SearchPluginTest.php',
         'SearchDAV\\XML\\BasicSearch' => __DIR__ . '/..' . '/icewind/searchdav/src/XML/BasicSearch.php',
         'SearchDAV\\XML\\BasicSearchSchema' => __DIR__ . '/..' . '/icewind/searchdav/src/XML/BasicSearchSchema.php',
         'SearchDAV\\XML\\Limit' => __DIR__ . '/..' . '/icewind/searchdav/src/XML/Limit.php',
